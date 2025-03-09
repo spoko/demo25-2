@@ -27,7 +27,7 @@ public class FirstClassDemo {
         int useAge = scanner.nextInt();
 
         System.out.println("Nice to meet you " + userName +
-                ", what a wonderful age " + useAge + "!");
+                ", what a wonderful age " + useAge + "!!!");
     }
 }
 
