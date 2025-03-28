@@ -56,7 +56,15 @@ public abstract class Pet {
         }
     }
 
-    //constructors
+    //copy constructor - type III
+    public Pet(Pet pet){
+        this.name = pet.name;
+        this.age = pet.age;
+        this.breed = pet.breed;
+        this.address = pet.address;
+    }
+
+    //constructors type II
     public Pet(String name, int age, Breed breed, Address address){
         setName(name);
         setAge(age);
@@ -71,6 +79,14 @@ public abstract class Pet {
     public Pet(String name, int age){
         setName(name);
         setAge(age);
+    }
+
+    //constructor type I
+    public Pet(){
+        this.name = "some name";
+        this.age = 1;
+        this.address = new Address("Sofia", "Some", 1000);
+        this.breed = new Breed("Unknown", "Unknown", "Unknown");
     }
 
     //Actions i.e. methods
