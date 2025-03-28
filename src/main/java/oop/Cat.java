@@ -5,6 +5,11 @@ public class Cat extends Pet {
         super(name, age, breed, address);
     }
 
+    @Override
+    public void speaks() {
+        meow();
+    }
+
     public void meow(){
         System.out.printf("%s is meowing...\n", getName());
     }

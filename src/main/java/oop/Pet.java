@@ -1,6 +1,6 @@
 package oop;
 
-public class Pet {
+public abstract class Pet {
     //characteristics
     private String name;
     private int age;
@@ -64,10 +64,22 @@ public class Pet {
         setAddress(address);
     }
 
+    public Pet(String name){
+        setName(name);
+    }
+
+    public Pet(String name, int age){
+        setName(name);
+        setAge(age);
+    }
+
     //Actions i.e. methods
     public void eats(){
         System.out.printf("%s is eating...\n", name);
     }
+
+    //Abstract method i.e. method without a body
+    public abstract void speaks();
 
     @Override
     public String toString() {
